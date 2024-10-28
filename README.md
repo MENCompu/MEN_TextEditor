@@ -5,7 +5,7 @@ The code base has been built from scratch and has no dependencies other than som
 The source code is awful with my today's standards (although only a year has passed since then) and the program is very buggy and crashes all the time, so don't look to much into it.
 
 # Build Instructions
-To build the program you should use the batch.bat file present in the repository.
+To build the program you should use the batch.bat file present in the repository, it uses the MSVC compiler (cl.exe).
 
 # Commands 
 h, j, k, l or arrow keys -> for simple cursor movement.
