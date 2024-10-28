@@ -917,13 +917,9 @@ Internal inline void InitializeMiniBuffer(State *state, SubWindow *miniBufferSub
 
     miniBufferSubWindow->isActive = true;
     miniBufferSubWindow->dimensionsInGlyphs = {(u32)windowDimensions.width / (u32)glyphDimensions.width, 1};
-    miniBufferSubWindow->absDimensions = {windowDimensions.width, 
-	                                  miniBufferSubWindow->dimensionsInGlyphs.height * 1.28f * 
-				          glyphDimensions.height};
+    miniBufferSubWindow->absDimensions = {windowDimensions.width, miniBufferSubWindow->dimensionsInGlyphs.height * 1.28f * glyphDimensions.height};
 
-    miniBufferSubWindow->absTopLeftPosition = {0.0f, 
-	                                       windowDimensions.height - 
-					       miniBufferSubWindow->absDimensions.height};
+    miniBufferSubWindow->absTopLeftPosition = {0.0f, windowDimensions.height - miniBufferSubWindow->absDimensions.height};
     miniBufferSubWindow->displayedBuffer = &state->miniBuffer;
 
     state->currentSubWindow = miniBufferSubWindow;
@@ -942,11 +938,9 @@ MACRO_InitializeMemory(InitializeMemory) {
 
     state->characterInfo.glyphDimensions = {10.0f, 19.0f};
 
-    char fontPath[MAX_PATH];
-    char fontRelPath[] = "..\\assets\\Fonts\\Hermit\\hermit_bold.bmp";
-
     char* dummy = 0;
-    (void)GetFullPathNameA(fontRelPath, Array_Count(fontRelPath), fontPath, &dummy);
+    char fontPath[MAX_PATH] = { 0 };
+    u32 hola = GetFullPathNameA("..\\assets\\Fonts\\Hermit\\hermit_bold.bmp", Array_Count(fontPath), fontPath, &dummy);
 
     state->characterInfo.glyphAtlas = LoadBMPImage(fontPath, (char *)memory->permanent + MEGABYTES(5), memory->ReadEntireFile);
 
