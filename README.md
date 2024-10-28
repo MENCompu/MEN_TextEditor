@@ -1,7 +1,7 @@
 # MEN_TextEditor
 A Windows-only rudimentary GUI text editor with "vim-like commands" and multiple windows system.
 This was my first personal project after the discovery of the Handmade Hero series and community.
-The code base has been built from scratch and has no dependencies other than some functions in the standard library and the windows libraries accessed through the win32 API.
+The code base has been built from scratch (including the simple software renderer) and has no dependencies other than some functions in the standard library and the windows libraries accessed through the win32 API.
 The source code is awful with my today's standards (although only a year has passed since then) and the program is very buggy and crashes all the time, so don't look to much into it.
 
 # Build Instructions
