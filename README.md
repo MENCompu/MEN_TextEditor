@@ -27,4 +27,4 @@ Ctrl-j, Ctrl-i, Ctrl-l, Ctrl-k -> move to the window that it's at the left, up, 
 : -> your cursor moves to the minibuffer and here you whould be able to type the path of the file you want to open.
 
 # Overview
-[MEN Text Editor overview](https://www.youtube.com/watch?v=GiVD-fpnp1U&ab_channel=JENYoutuber)
+[MEN Text Editor overview](https://www.youtube.com/watch?v=fgYtkhYv3Ws&ab_channel=MENYoutuber)
